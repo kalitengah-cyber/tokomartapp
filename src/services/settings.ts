@@ -3,8 +3,8 @@ import { StoreSettings, AppSettings } from '../types';
 const defaultStoreSettings: StoreSettings = {
   store_name: 'Wakhid Mart',
   owner_name: 'Wakhid',
-  phone: '081234567890',
-  address: 'Jl. Teknologi No. 88, Jakarta Selatan'
+  phone: '085730101602',
+  address: 'Jl. Kesesatan block M Mathius 87'
 };
 
 const defaultAppSettings: AppSettings = {

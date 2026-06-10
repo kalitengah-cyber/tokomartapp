@@ -8,6 +8,7 @@ import { POS } from './pages/POS';
 import { Reports } from './pages/Reports';
 import { Settings } from './pages/Settings';
 import { Customers } from './pages/Customers';
+import { TransactionHistory } from './pages/TransactionHistory';
 import { AuthProvider } from './context/AuthContext';
 import { ProtectedRoute } from './components/ProtectedRoute';
 
@@ -40,6 +41,8 @@ export default function App() {
             {/* Kasir dan Admin bisa akses POS */}
             <Route path="/pos" element={<POS />} />
             
+            <Route path="/transactions" element={<TransactionHistory />} />
+            
             {/* HANYA Admin yang bisa akses Manajemen Stok Barang */}
             <Route path="/products" element={
               <ProtectedRoute allowedRoles={['ADMIN']}>
@@ -70,5 +73,3 @@ export default function App() {
     </AuthProvider>
   );
 }
-
-

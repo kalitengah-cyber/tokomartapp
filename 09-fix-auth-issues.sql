@@ -28,7 +28,7 @@ BEGIN
     VALUES (
       gen_random_uuid(),
       admin_id,
-      format('{"sub":"%s","email":"%s"}', admin_id::text, 'admin@pos.com')::jsonb,
+      format('{"sub":"%s","email":"%s"}', admin_id::text, 'username anda')::jsonb,
       'email',
       admin_id::text,
       NOW(),
